@@ -1,0 +1,22 @@
+<div class="col-md-6">
+  <h2 class="text-center">Create User</h2>
+  <form [formGroup]="saveForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First name:</label>
+      <input type="text" formControlName="firstName" placeholder="FirstName" name="firstName" class="form-control" id="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last name:</label>
+      <input type="text" formControlName="lastName" placeholder="LastName" name="lastName" class="form-control" id="lastName">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" formControlName="email" placeholder="Email" name="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" formControlName="password" placeholder="Password" name="password" class="form-control" id="password">
+    </div>
+    <button class="btn btn-success">Save</button>
+  </form>
+</div>
